@@ -1,0 +1,42 @@
+# Scénario de test : toutes les formes, styles, transformations,
+# groupes, sauvegarde, chargement, export et cas d'erreur.
+nouveau 100 60
+cercle 20 20 10
+ellipse 60 20 15 8
+carre 5 40 12
+rectangle 25 40 20 10
+ligne 50 35 95 55
+polyligne 55 40 65 50 75 40 85 50
+polygone 80 5 95 15 85 25
+chemin M 30 5 L 40 5 V 12 H 30 Z
+fond 1 red
+trait 3 blue
+fond 3 yellow
+pivoter 4 30
+deplacer 2 0 3
+inverser 7 x
+groupe 1 3
+deplacer 9 5 0
+liste
+sauver test_sortie.dessin
+exporter test_sortie.svg
+supprimer 2
+liste
+charger test_sortie.dessin
+liste
+degrouper 9
+deplacer 9 -5 0
+degrouper 9
+liste
+# --- cas d'erreur (le programme doit continuer) ---
+cercle 10 10 -5
+cercle a b c
+polygone 1 2 3
+chemin L 10 10
+inconnue 1 2
+trait 99 red
+fond 1 rouge;
+groupe 9 9
+charger fichier_inexistant.txt
+degrouper 1
+quitter

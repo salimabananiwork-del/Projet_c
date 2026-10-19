@@ -1,0 +1,24 @@
+# Les 9 formes demandées par le sujet
+# Chargement : ./svg_cli exemples/formes.dessin   (puis menu 3 pour la liste)
+viewport 0 0 200 80
+cercle 20 20 12
+fond 1 red
+ellipse 60 20 18 10
+fond 2 orange
+carre 92 8 24
+fond 3 gold
+rectangle 130 10 40 20
+fond 4 lightgreen
+ligne 180 5 195 35
+trait 5 blue
+polyligne 5 70 20 50 35 70 50 50
+trait 6 purple
+polygone 70 45 85 55 80 72 60 72 55 55
+fond 7 skyblue
+chemin M 100 45 L 125 45 V 72 H 100 Z
+fond 8 pink
+cercle 155 58 8
+rectangle 168 50 20 16
+groupe 9 10
+fond 11 lightgray
+pivoter 11 20
